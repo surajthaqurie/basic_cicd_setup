@@ -8,4 +8,4 @@ let original = "Hello World";
 let reversed = [...original].reverse().join("");
 console.log(reversed);
 
-console.log(new Date());
+console.log(new Date().toString());
