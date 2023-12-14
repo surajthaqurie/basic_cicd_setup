@@ -27,5 +27,3 @@ jobs:
 
       - name: success message
         run: echo "Build successfully"
-
-      -
