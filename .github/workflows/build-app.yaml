@@ -18,7 +18,7 @@ jobs:
         run: echo "Ready for build"
 
       - name: build for production
-        run: npm run prod
+        run: npm install --save --legacy-peer-deps && npm run prod
 
       - name: success message
         run: echo "Build successfully"
