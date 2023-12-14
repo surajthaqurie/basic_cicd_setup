@@ -11,7 +11,14 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: ready for build
+        run: echo "Ready for build"
+
       - name: build for production
         run: npm run prod
+
       - name: success message
-        run: echo "Build success fully"
+        run: echo "Build successfully"
