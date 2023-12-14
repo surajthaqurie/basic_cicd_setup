@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build for production
-        run: pnpm prod
+        run: npm run prod
       - name: success message
         run: echo "Build success fully"
