@@ -18,7 +18,14 @@ jobs:
         run: echo "Ready for build"
 
       - name: build for production
-        run: npm install --save --legacy-peer-deps && npm run prod
+        run: npm install --save --legacy-peer-deps && npm run prod --if-present
+
+      - uses: actions/upload-artifact@v4
+        with: 
+          name: app-build
+          path: build
 
       - name: success message
         run: echo "Build successfully"
+
+      -
