@@ -10,9 +10,8 @@ jobs:
   build:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
-
-steps:
-  - name: build for production
-    run: pnpm prod
-  - name: success message
-    run: echo "Build success fully"
+    steps:
+      - name: build for production
+        run: pnpm prod
+      - name: success message
+        run: echo "Build success fully"
