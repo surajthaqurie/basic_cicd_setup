@@ -4,13 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "prod": "rm -r build/* && tsc && node build/app.js",
+    "prod": "rimraf build && tsc && node build/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
   }
 }
